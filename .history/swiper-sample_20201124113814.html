@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+​
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 600px;
+            height: 400px;
+        }
+        
+        ​ div.swiper-slide {
+            position: relative;
+        }
+        
+        ​ div.swiper-slide img {
+            height: 300px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        div.swiper-slide div {
+            margin: 0;
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+​
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://2.bp.blogspot.com/-_fEsqa6U4bU/Wn1WCfYSE2I/AAAAAAABKHI/Xo55vE2KSVE4BtBY5e6fn75zA-9m4U5fgCLcBGAs/s450/map_takara_chizu.png" />
+                <div>宝の地図を見つけたら</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://4.bp.blogspot.com/-F2bbLLp5TZw/W64DvuyZmxI/AAAAAAABPJM/4m4m4UgWzv0N3_e1NPnXW9RXtke1w3g5gCLcBGAs/s400/money_maizoukin_horu_businessman.png" />
+                <div>掘り返すことをお勧めします</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://4.bp.blogspot.com/-8tOsvuNJBgI/W64DvS_kcVI/AAAAAAABPJI/FHj6crcA4j4tWZB4d4gknr4T9bS_jwFPwCLcBGAs/s400/money_maizoukin_hakken_businessman.png" />
+                <div>一発当てることができれば</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://4.bp.blogspot.com/-8MLnxxwFDeo/XASweK9kyxI/AAAAAAABQac/eeYFGFHtMXYtZyIYippxOGIpVLBqT8-NACLcBGAs/s550/money_okanemochi.png" />
+                <div>逆転ホームランです</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/28/3e/69/283e6963985561e76265656fbfad220a.gif" />
+                <div>使われる側から使う側へ</div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        ​
+        <!-- If we need navigation buttons -->
+        <!--<div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>-->
+        ​
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        // direction: 'vertical',
+        // loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+    })
+</script>
+​
+
+</html>
